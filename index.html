@@ -1,34 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
     <title>Rejestracja</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
 <body>
-    <main class="main">
+    <main class="container-md">
         <h1>Rejestracja</h1>
-        <form>
+        <form method="post" action="URL">
             <p>
                 <label>Imię:
-                    <input class="form-items" name="firstName" placeholder="Wpisz imię">
+                    <input class="form-control" name="firstName" placeholder="Wpisz imię">
                 </label>
             </p>
             <p>
                 <label>Nazwisko:
-                    <input class="form-items" name="lastName" placeholder="Wpisz nazwisko">
+                    <input class="form-control" name="lastName" placeholder="Wpisz nazwisko">
                 </label>
             </p>
-                <label>Płeć:<input name="gender" type="radio" value="woman"> Kobieta</label><br />
-            <input name="gender" type="radio" value="man"> Mężczyzna
-
+                    <label>Płeć:</label>
+                    <input style="margin-left: 32px;" name="gender" type="radio" value="woman"> Kobieta<br />
+                    <input style="margin-left: 68px" name="gender" type="radio" value="man"> Mężczyzna<br />
             <p>
                 <label>Adres email:
-                    <input class="form-items" name="firstName" placeholder="Wpisz adres email">
+                    <input class="form-control name="email" placeholder="Wpisz adres email">
                 </label>
+            </p>
+            <p>
+                <label style="margin-bottom: 0">Hasło:
+                    <input class="form-control" name="password" placeholder="Hasło">
+                </label><br />
+                <label style="color: gray; font-size: small">Min. 8 znaków</label>
+            </p>
+            <p>
+                <div style="display: inline">
+                    <label>Miasto:
+                        <input class="form-control" name="city">
+                    </label>
+                </div>
+                <div style="display: inline">
+                    <label>Województwo:
+                        <input class="form-control" name="woj" placeholder="Wybierz...">
+                    </label>
+                </div>
+                <div style="display: inline">
+                    <label>Kod pocztowy:
+                        <input class="form-control" name="postalcode">
+                    </label>
+                </div>
+            </p>
+            <input type="checkbox"> Akceptuję <a href="#">regulamin</a><br />
+            <input type="checkbox" checked> Wyrażam zgodę na otrzymywanie informacji marketingowych
+            <p>
+                <button type="submit" class="btn btn-primary">Rejestruj</button>
             </p>
 
         </form>
     </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
