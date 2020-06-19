@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+}
+.main {
+    width: 70%;
+}
+
+.form-items {
+    display: block;
+    width: 100%;
+}
