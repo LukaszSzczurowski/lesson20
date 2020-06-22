@@ -11,7 +11,7 @@
 
     <title>Rejestracja</title>
 <body>
-    <main class="container-md">
+    <main class="container">
         <h1>Rejestracja</h1>
         <form method="post" action="URL">
             <p>
@@ -28,9 +28,11 @@
                     <input style="margin-left: 32px;" name="gender" type="radio" value="woman"> Kobieta<br />
                     <input style="margin-left: 68px" name="gender" type="radio" value="man"> Mężczyzna<br />
             <p>
-                <label>Adres email:
-                    <input type="email" required="required" class="form-control" name="email" placeholder="Wpisz adres email">
-                </label>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
             </p>
             <p>
                 <label style="margin-bottom: 0">Hasło:
@@ -59,8 +61,8 @@
                     </label>
                 </div>
             </p>
-            <input type="checkbox"> Akceptuję <a href="#">regulamin</a><br />
-            <input type="checkbox" checked> Wyrażam zgodę na otrzymywanie informacji marketingowych
+                <input type="checkbox"> Akceptuję <a href="#">regulamin</a><br />
+                <input type="checkbox" checked> Wyrażam zgodę na otrzymywanie informacji marketingowych
             <p>
                 <button type="submit" class="btn btn-primary">Rejestruj</button>
             </p>
